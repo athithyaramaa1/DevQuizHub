@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.restartbutton {
+  border: none;
+  height: 40px;
+  width: 150px;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  font-weight: 600;
+  background-color: red;
+  cursor: pointer;
+}
+
+.restartbutton:hover {
+  color: azure;
+  scale: 1.04;
+}
