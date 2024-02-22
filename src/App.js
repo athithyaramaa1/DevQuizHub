@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import QuestionBox from "./components/QuestionBox";
 import * as React from "react";
-import MaterialUISwitch from "./ModeSwitch";
+import MaterialUISwitch from "./components/ModeSwitch";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);

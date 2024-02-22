@@ -6,7 +6,7 @@ export default function Result(score) {
   const ToggleClick = () => {
     score.HandlehasLastQuestionReached(true);
     score.handleIndex(0);
-    score.Handlescore(0)
+    score.Handlescore(0);
   };
   return (
     <div className="result-container">
@@ -23,12 +23,14 @@ export default function Result(score) {
       </div>
       <h1>
         {/* Score along with % of right questions */}
-        {score.score} out of 5 correct - ({((score.score) / 5) * 100}%)
+        {score.score} out of 5 correct - ({(score.score / 5) * 100}%)
       </h1>
 
       <h1>
         {/* Conditional message based upon score */}
-        {score.score >= 3 ? "WOW, you nailed it!✨" : "Better luck next timee😓"}
+        {score.score >= 3
+          ? "WOW, you nailed it!✨"
+          : "Better luck next timee😓"}
       </h1>
       {/* Restart */}
       <Link to="/">
